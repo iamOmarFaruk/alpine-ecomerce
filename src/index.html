@@ -6,7 +6,6 @@
   <title>Simple Alpine Ecomerce</title>
   <!-- add tailwind cdn for dev -->
   <script src="/cdn.min.js" defer></script>
-  <script src="https://cdn.tailwindcss.com"></script>
   <!-- add google font popins -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
@@ -54,7 +53,7 @@
 
 
     </style>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../dist/output.css">
 </head>
 <body x-data="app" x-cloak class="relative">
    
@@ -66,7 +65,7 @@
 <nav class="bg-gray-800 text-white p-4 flex justify-between fixed top-0 left-0 right-0">
     <!-- Left side nav -->
     <div class="flex items-center">
-        <a class="cursor-pointer" @click="currentScreen = 'home'" class="text-2xl font-semibold" x-text="apptitle">My Store</a>
+        <a class="cursor-pointer" @click="currentScreen = 'home'" class="text-2xl font-semibold" x-text="apptitle"></a>
     </div>
 
     <!-- Right side nav -->
