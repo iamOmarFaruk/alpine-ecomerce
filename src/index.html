@@ -194,8 +194,10 @@
                             <tr>
                                 <th class="px-4 py-2">Product</th>
                                 <th class="px-4 py-2">Description</th>
-                                <th class="px-4 py-2">Quantity</th>
+                                
                                 <th class="px-4 py-2">Price</th>
+                                <th class="px-4 py-2">Quantity</th>
+                                <th class="px-4 py-2">Total Price</th>
                                 <th class="px-4 py-2">Action</th>
                             </tr>
                         </thead>
@@ -209,6 +211,7 @@
                                         </div>
                                     </td>
                                     <td class="px-4 py-2" x-text="product.description"></td>
+                                    <td class="px-4 py-2" x-text="'$'+ product.price"></td>
                                     <td class="px-4 py-2">
                                         <input type="number" class="border border-gray-300 p-2 rounded w-20"
                                             x-model="product.quantity"
