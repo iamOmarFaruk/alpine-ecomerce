@@ -212,9 +212,24 @@ addEventListener("alpine:init", () => {
 
 
     currentYear: '',
+    scrollToTop:false,
     init() {
       this.currentYear = new Date().getFullYear();
-      console.log(this.currentYear);
+      
+
+      // scroll to top, if user scrolls down 70% or more then scrollToTop make true 
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > window.innerHeight * 0.7) {
+          this.scrollToTop = true;
+        } else {
+          this.scrollToTop = false;
+        }
+       
+      })
+
+     
+
+
     }
 
 
