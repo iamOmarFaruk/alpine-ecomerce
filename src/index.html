@@ -137,8 +137,8 @@
                         <img :src="product.image" alt="product image" class="rounded-lg">
                     </div>
                     <!-- create a card footer -->
-                    <div class="bg-gray-200 rounded-b p-2 flex justify-between ">
-                    <form @submit.prevent>
+                    <div class="bg-gray-200 rounded-b p-3 align-middle">
+                    <form @submit.prevent class="flex justify-between">
                         <button  class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" @click="addToCart(product.id, product.quantity)">
                             Add to Cart
                         </button>
@@ -339,7 +339,7 @@
 
     <!-- create a simple footer with copyright reserved -->
     <footer class="bg-gray-800 text-white p-4 text-center mt-20">
-        &copy; 2020 All rights reserved
+        &copy; <span x-text="currentYear"></span> All rights reserved
     </footer>
 
 

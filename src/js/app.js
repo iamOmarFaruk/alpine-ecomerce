@@ -209,5 +209,15 @@ addEventListener("alpine:init", () => {
 
       return totalPrice;
     },
+
+
+    currentYear: '',
+    init() {
+      this.currentYear = new Date().getFullYear();
+      console.log(this.currentYear);
+    }
+
+
+
   }));
 });
